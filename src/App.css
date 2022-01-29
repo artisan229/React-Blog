@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'nanumsquare';
+}
+
+.black-nav {
+  background-color: black;
+  color: white;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list {
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal {
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+}
+
+.publish, .search {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.publish input, .search input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid grey;
+}
+
+.publish button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+.bold {
+  font-weight: 600;
+}
+
+
+.font-medium {
+  font-size: 16px;
+}
+
+.red-btn {
+  background: #dc3545;
+}
+
+.blue-btn {
+  background: #0d6efd;
+}
+
+.glass-btn {
+  color: black;
+  background: none;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  height: 30px;
+}
