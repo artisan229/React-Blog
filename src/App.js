@@ -5,8 +5,8 @@ import { findRenderedDOMComponentWithClass } from 'react-dom/cjs/react-dom-test-
 
 function App() {
 
-  let [posts, setPosts] = useState(['Next.js 사용기', 'Stack overflow', '데이터 마이그레이션']);
-  let [likes, setLikes] = useState([0, 0, 0]);
+  let [posts, setPosts] = useState([]);
+  let [likes, setLikes] = useState([]);
   let [modal, setModal] = useState(false);
   let [title, setTitle] = useState(0);
   let [input, setInput] = useState('');
@@ -46,10 +46,10 @@ function App() {
             if (post.includes(search)) {
               return (
                 <div className="list" key={idx}>
-              <h3 onClick={() => { setTitle(idx) }}> {posts[idx]}
-                <button className="btn glass-btn font-medium" onClick={() => { likeChange(idx) }}>👍</button> {likes[idx]} </h3>
-              <hr />
-            </div>
+                  <h3 onClick={() => { setTitle(idx) }}> {posts[idx]} 
+                  <button className="btn glass-btn font-medium" onClick={() => { likeChange(idx) }}>👍</button> {likes[idx]} </h3>
+                  <hr />
+                </div>
               )
             } else {
               return null;
