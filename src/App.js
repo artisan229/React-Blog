@@ -21,8 +21,8 @@ function App() {
   function publish(text) {
     var newPosts = [...posts];
     var newLikes = [...likes];
-    newPosts.push(text);
-    newLikes.push(0);
+    newPosts.unshift(text);
+    newLikes.unshift(0);
     setPosts(newPosts);
     setLikes(newLikes);
   }
